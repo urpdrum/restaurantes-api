@@ -1,6 +1,6 @@
 services:
   app:
-    container_name: restaurantapp
+    container_name: restaurantesapp
     build:
       context: .
       dockerfile: Dockerfile
@@ -10,7 +10,7 @@ services:
       db:
         condition: service_healthy
     environment:
-      SPRING_DATASOURCE_URL:  postgresql://restaurantdb_l359_user:Wk7oVfzYTPeBz57mUrfshd5ctV9EGgkv@dpg-ct31ol2j1k6c73b2me7g-a/restaurantdb_l359
+      SPRING_DATASOURCE_URL:  postgresql://restaurantesdb_l359_user:Wk7oVfzYTPeBz57mUrfshd5ctV9EGgkv@dpg-ct31ol2j1k6c73b2me7g-a/restaurantdb_l359
       SPRING_DATASOURCE_USERNAME: restaurantdb_l359_user
       SPRING_DATASOURCE_PASSWORD: Wk7oVfzYTPeBz57mUrfshd5ctV9EGgkv
     networks:
