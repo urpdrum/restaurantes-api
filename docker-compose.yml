@@ -1,0 +1,45 @@
+services:
+  app:
+    container_name: restaurantapp
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL:  postgresql://restaurantdb_l359_user:Wk7oVfzYTPeBz57mUrfshd5ctV9EGgkv@dpg-ct31ol2j1k6c73b2me7g-a/restaurantdb_l359
+      SPRING_DATASOURCE_USERNAME: restaurantdb_l359_user
+      SPRING_DATASOURCE_PASSWORD: Wk7oVfzYTPeBz57mUrfshd5ctV9EGgkv
+    networks:
+      - restaurant-network
+  db:
+    container_name: postgresdb
+    image: postgres:16.4-alpine3.20
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: restaurantdb_l359_user
+      POSTGRES_PASSWORD: Wk7oVfzYTPeBz57mUrfshd5ctV9EGgkv
+      POSTGRES_DB: restaurantdb_l359
+    networks:
+      - restaurant-network
+    healthcheck:
+      # Use the CMD-SHELL command to check the health
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      # Set the interval to 10 seconds
+      interval: 10s
+      # Set the timeout to 5 seconds
+      timeout: 5s
+      # Set the retries to 5
+      retries: 5
+    volumes:
+      - restaurantdb_l359-data:/var/lib/postgresql/data
+
+volumes:
+  restaurantdb_l359-data:
+
+networks:
+  restaurant-network:
