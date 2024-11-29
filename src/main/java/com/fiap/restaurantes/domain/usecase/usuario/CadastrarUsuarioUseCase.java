@@ -12,4 +12,5 @@ public class CadastrarUsuarioUseCase {
     public Usuario cadastrarUsuario (Usuario usuario) {
         return cadastrarUsuarioInterface.cadastrarUsuario(usuario);
     }
+}
 

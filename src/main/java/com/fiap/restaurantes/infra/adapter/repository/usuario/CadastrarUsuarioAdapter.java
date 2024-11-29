@@ -1,6 +1,7 @@
 package com.fiap.restaurantes.infra.adapter.repository.usuario;
 
-import com.fiap.restaurantes.domain.entity.Usuario;
+
+import com.fiap.restaurantes.domain.entity.validation.Usuario;
 import com.fiap.restaurantes.domain.gateway.usuario.CadastrarUsuarioInterface;
 import com.fiap.restaurantes.infra.entity.UsuarioEntity;
 import com.fiap.restaurantes.infra.repository.UsuarioRepository;

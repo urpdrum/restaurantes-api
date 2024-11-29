@@ -7,8 +7,9 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(name = "ceps", primary = false, contextId = "enderecoClient", url = "${application.client.endereco.host}",
+@FeignClient(name = "ceps", primary = false, contextId = "enderecoClient", url = "${https://viacep.com.br/ws}",
         configuration = FeignConfiguration.class)
+
 public interface ConsultarEnderecoPorCepClient {
 
     /**

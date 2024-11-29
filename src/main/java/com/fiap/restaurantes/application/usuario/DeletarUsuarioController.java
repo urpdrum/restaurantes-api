@@ -1,8 +1,8 @@
 package com.fiap.restaurantes.application.usuario;
 
 
-import com.fiap.tc.restaurantes.domain.output.usuario.UsuarioDeletadoResponse;
-import com.fiap.tc.restaurantes.domain.usecase.usuario.DeletarUsuarioUseCase;
+import com.fiap.restaurantes.domain.output.usuario.UsuarioDeletadoResponse;
+import com.fiap.restaurantes.domain.usecase.usuario.DeletarUsuarioUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;

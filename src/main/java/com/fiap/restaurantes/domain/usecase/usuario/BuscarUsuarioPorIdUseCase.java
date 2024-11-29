@@ -1,9 +1,12 @@
 package com.fiap.restaurantes.domain.usecase.usuario;
 
-import com.fiap.tc.restaurantes.domain.entity.Usuario;
-import com.fiap.tc.restaurantes.domain.exception.usuario.UsuarioNotFoundException;
-import com.fiap.tc.restaurantes.domain.gateway.usuario.BuscarUsuarioPorIdInterface;
 
+import com.fiap.restaurantes.domain.entity.validation.Usuario;
+import com.fiap.restaurantes.domain.exception.usuario.UsuarioNotFoundException;
+import com.fiap.restaurantes.domain.gateway.usuario.BuscarUsuarioPorIdInterface;
+import org.springframework.stereotype.Component;
+
+@Component
 public class BuscarUsuarioPorIdUseCase {
   private final BuscarUsuarioPorIdInterface buscarUsuarioPorIdInterface;
 

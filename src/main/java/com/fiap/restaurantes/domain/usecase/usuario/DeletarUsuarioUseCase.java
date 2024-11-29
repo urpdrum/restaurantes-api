@@ -1,13 +1,13 @@
 package com.fiap.restaurantes.domain.usecase.usuario;
 
 
-import com.fiap.tc.restaurantes.domain.entity.Avaliacao;
-import com.fiap.tc.restaurantes.domain.entity.Reserva;
-import com.fiap.tc.restaurantes.domain.gateway.usuario.DeletarUsuarioInterface;
-import com.fiap.tc.restaurantes.domain.usecase.avaliacao.BuscarAvaliacoesPorUsuarioUseCase;
-import com.fiap.tc.restaurantes.domain.usecase.avaliacao.DeletarAvaliacaoUseCase;
-import com.fiap.tc.restaurantes.domain.usecase.reserva.BuscarReservasPorUsuarioUseCase;
-import com.fiap.tc.restaurantes.domain.usecase.reserva.DeletarReservaUseCase;
+import com.fiap.restaurantes.domain.entity.Avaliacao;
+import com.fiap.restaurantes.domain.entity.Reserva;
+import com.fiap.restaurantes.domain.gateway.usuario.DeletarUsuarioInterface;
+import com.fiap.restaurantes.domain.usecase.avaliacao.BuscarAvaliacoesPorUsuarioUseCase;
+import com.fiap.restaurantes.domain.usecase.avaliacao.DeletarAvaliacaoUseCase;
+import com.fiap.restaurantes.domain.usecase.reserva.BuscarReservasPorUsuarioUseCase;
+import com.fiap.restaurantes.domain.usecase.reserva.DeletarReservaUseCase;
 
 import java.util.List;
 

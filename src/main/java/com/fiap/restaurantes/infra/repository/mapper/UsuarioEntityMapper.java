@@ -1,6 +1,7 @@
 package com.fiap.restaurantes.infra.repository.mapper;
 
-import com.fiap.restaurantes.domain.entity.Usuario;
+
+import com.fiap.restaurantes.domain.entity.validation.Usuario;
 import com.fiap.restaurantes.infra.entity.UsuarioEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;

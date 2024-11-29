@@ -1,9 +1,10 @@
 package com.fiap.restaurantes.application.usuario;
 
-import com.fiap.tc.restaurantes.domain.entity.Usuario;
-import com.fiap.tc.restaurantes.domain.mapper.usuario.UsuarioMapper;
-import com.fiap.tc.restaurantes.domain.output.usuario.UsuarioResponse;
-import com.fiap.tc.restaurantes.domain.usecase.usuario.BuscarUsuarioPorIdUseCase;
+
+import com.fiap.restaurantes.domain.entity.validation.Usuario;
+import com.fiap.restaurantes.domain.mapper.usuario.UsuarioMapper;
+import com.fiap.restaurantes.domain.output.usuario.UsuarioResponse;
+import com.fiap.restaurantes.domain.usecase.usuario.BuscarUsuarioPorIdUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
