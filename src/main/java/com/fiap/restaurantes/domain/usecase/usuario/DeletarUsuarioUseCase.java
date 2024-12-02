@@ -8,9 +8,10 @@ import com.fiap.restaurantes.domain.usecase.avaliacao.BuscarAvaliacoesPorUsuario
 import com.fiap.restaurantes.domain.usecase.avaliacao.DeletarAvaliacaoUseCase;
 import com.fiap.restaurantes.domain.usecase.reserva.BuscarReservasPorUsuarioUseCase;
 import com.fiap.restaurantes.domain.usecase.reserva.DeletarReservaUseCase;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class DeletarUsuarioUseCase {
   private final DeletarUsuarioInterface deletarUsuarioInterface;
   private final BuscarUsuarioPorIdUseCase buscarUsuarioPorIdUseCase;

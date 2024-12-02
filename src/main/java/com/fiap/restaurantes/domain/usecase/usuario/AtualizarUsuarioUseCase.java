@@ -3,7 +3,9 @@ package com.fiap.restaurantes.domain.usecase.usuario;
 
 import com.fiap.restaurantes.domain.entity.validation.Usuario;
 import com.fiap.restaurantes.domain.gateway.usuario.AtualizarUsuarioInterface;
+import org.springframework.stereotype.Service;
 
+@Service
 public class AtualizarUsuarioUseCase {
   private final AtualizarUsuarioInterface atualizarUsuarioInterface;
   private final BuscarUsuarioPorIdUseCase buscarUsuarioPorIdUseCase;
