@@ -2,7 +2,8 @@ package com.fiap.restaurantes.domain.usecase.usuario;
 
 import com.fiap.restaurantes.domain.entity.Avaliacao;
 import com.fiap.restaurantes.domain.entity.Reserva;
-import com.fiap.restaurantes.domain.entity.Usuario;
+
+import com.fiap.restaurantes.domain.entity.validation.Usuario;
 import com.fiap.restaurantes.domain.exception.usuario.UsuarioNotFoundException;
 import com.fiap.restaurantes.domain.gateway.usuario.DeletarUsuarioInterface;
 import com.fiap.restaurantes.domain.usecase.avaliacao.BuscarAvaliacoesPorUsuarioUseCase;

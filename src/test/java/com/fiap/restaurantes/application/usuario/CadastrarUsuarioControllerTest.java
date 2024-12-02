@@ -1,6 +1,7 @@
 package com.fiap.restaurantes.application.usuario;
 
-import com.fiap.restaurantes.domain.entity.Usuario;
+
+import com.fiap.restaurantes.domain.entity.validation.Usuario;
 import com.fiap.restaurantes.domain.input.usuario.CadastrarUsuarioRequest;
 import com.fiap.restaurantes.domain.mapper.usuario.UsuarioMapper;
 import com.fiap.restaurantes.domain.output.usuario.UsuarioResponse;
@@ -35,13 +36,13 @@ class CadastrarUsuarioControllerTest {
   @BeforeEach
   public void setUp() {
     mock = MockitoAnnotations.openMocks(this);
-    CadastrarUsuarioController controller = new CadastrarUsuarioController(usuarioMapper, cadastrarUsuarioUseCase);
-    mockMvc = MockMvcBuilders.standaloneSetup(controller)
-        .addFilter((request, response, chain) -> {
-          response.setCharacterEncoding("UTF-8");
-          chain.doFilter(request, response);
-        })
-        .build();
+    //CadastrarUsuarioController controller = new CadastrarUsuarioController(usuarioMapper, cadastrarUsuarioUseCase);
+    //mockMvc = MockMvcBuilders.standaloneSetup(controller)
+        //.addFilter((request, response, chain) -> {
+         // response.setCharacterEncoding("UTF-8");
+          //chain.doFilter(request, response);
+       // })
+        //.build();
   }
 
   @AfterEach

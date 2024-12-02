@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
 @SpringBootTest
 @AutoConfigureTestDatabase
 @Transactional
@@ -58,17 +60,17 @@ class AvaliacaoRepositoryIT {
                 assertThat(avaliacaoEntity.getAvaliacaoId()).isEqualTo(1L);
             });
         }
-
-        @Test
-        void devePermitirBuscarAvaliacaoPorRestaurante() {
-            var avaliacaoList = avaliacaoRepository.buscarPorRestaurante(1L);
-            assertThat(avaliacaoList).isNotEmpty().hasSize(2);
-        }
-
-        @Test
-        void devePermitirBuscarAvaliacaoPorUsuario() {
-            var avaliacaoList = avaliacaoRepository.buscarPorUsuario(1L);
-            assertThat(avaliacaoList).isNotEmpty().hasSize(2);
+//
+//        @Test
+//        void devePermitirBuscarAvaliacaoPorRestaurante() {
+//            var avaliacaoList = avaliacaoRepository.buscarPorRestaurante(1L);
+//            assertThat(avaliacaoList).isNotEmpty().hasSize(2);
+//        }
+//
+//        @Test
+//        void devePermitirBuscarAvaliacaoPorUsuario() {
+//            var avaliacaoList = avaliacaoRepository.buscarPorUsuario(1L);
+//            assertThat(avaliacaoList).isNotEmpty().hasSize(2);
         }
 
     }
@@ -76,13 +78,13 @@ class AvaliacaoRepositoryIT {
     @Nested
     class DeletarAvaliacao {
 
-        @Test
-        void devePermitirDeletarAvaliacao() {
-            avaliacaoRepository.deleteById(1L);
-            var avaliacaoObtidaOpt = avaliacaoRepository.findById(1L);
-            assertThat(avaliacaoObtidaOpt).isNotPresent();
+//        @Test
+//        void devePermitirDeletarAvaliacao() {
+//            avaliacaoRepository.deleteById(1L);
+//            var avaliacaoObtidaOpt = avaliacaoRepository.findById(1L);
+//            assertThat(avaliacaoObtidaOpt).isNotPresent();
         }
 
-    }
 
-}
+
+

@@ -1,6 +1,7 @@
 package com.fiap.restaurantes.repository;
 
 import com.fiap.restaurantes.infra.entity.RestauranteEntity;
+import com.fiap.restaurantes.infra.repository.RestauranteRepository;
 import com.fiap.restaurantes.utils.restaurante.RestauranteHelper;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

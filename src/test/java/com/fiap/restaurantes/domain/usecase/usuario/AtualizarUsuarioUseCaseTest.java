@@ -1,6 +1,7 @@
 package com.fiap.restaurantes.domain.usecase.usuario;
 
-import com.fiap.restaurantes.domain.entity.Usuario;
+
+import com.fiap.restaurantes.domain.entity.validation.Usuario;
 import com.fiap.restaurantes.domain.exception.usuario.UsuarioNotFoundException;
 import com.fiap.restaurantes.domain.gateway.usuario.AtualizarUsuarioInterface;
 import com.fiap.restaurantes.utils.usuario.UsuarioHelper;
@@ -11,6 +12,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 

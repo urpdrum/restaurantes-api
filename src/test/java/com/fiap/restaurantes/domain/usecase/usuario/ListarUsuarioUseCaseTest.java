@@ -3,7 +3,8 @@ package com.fiap.restaurantes.domain.usecase.usuario;
 
 import com.fiap.restaurantes.domain.entity.validation.Usuario;
 import com.fiap.restaurantes.domain.gateway.usuario.ListarUsuariosInterface;
-import com.fiap.restaurantes.helper.UsuarioHelper;
+
+import com.fiap.restaurantes.utils.usuario.UsuarioHelper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

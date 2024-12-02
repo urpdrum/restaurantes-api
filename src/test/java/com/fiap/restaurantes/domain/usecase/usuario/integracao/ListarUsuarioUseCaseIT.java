@@ -1,6 +1,7 @@
 package com.fiap.restaurantes.domain.usecase.usuario.integracao;
 
-import com.fiap.restaurantes.domain.entity.Usuario;
+
+import com.fiap.restaurantes.domain.entity.validation.Usuario;
 import com.fiap.restaurantes.domain.usecase.usuario.ListarUsuariosUseCase;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

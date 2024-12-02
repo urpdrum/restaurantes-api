@@ -1,7 +1,8 @@
 package com.fiap.restaurantes.application.usuario;
 
 import com.fiap.restaurantes.application.handler.GlobalExceptionHandler;
-import com.fiap.restaurantes.domain.entity.Usuario;
+
+import com.fiap.restaurantes.domain.entity.validation.Usuario;
 import com.fiap.restaurantes.domain.exception.usuario.UsuarioNotFoundException;
 import com.fiap.restaurantes.domain.mapper.usuario.UsuarioMapper;
 import com.fiap.restaurantes.domain.output.usuario.UsuarioResponse;

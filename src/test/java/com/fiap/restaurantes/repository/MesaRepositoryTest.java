@@ -1,6 +1,7 @@
 package com.fiap.restaurantes.repository;
 
 import com.fiap.restaurantes.infra.entity.MesaEntity;
+import com.fiap.restaurantes.infra.repository.MesaRepository;
 import com.fiap.restaurantes.utils.mesa.MesaHelper;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,6 +1,7 @@
 package com.fiap.restaurantes.domain.usecase.usuario.integracao;
 
-import com.fiap.restaurantes.domain.entity.Usuario;
+
+import com.fiap.restaurantes.domain.entity.validation.Usuario;
 import com.fiap.restaurantes.domain.usecase.usuario.CadastrarUsuarioUseCase;
 import com.fiap.restaurantes.utils.usuario.UsuarioHelper;
 import org.junit.jupiter.api.Test;
@@ -8,6 +9,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 @SpringBootTest
 @ExtendWith(SpringExtension.class)

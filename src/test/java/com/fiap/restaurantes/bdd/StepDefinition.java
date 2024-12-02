@@ -1,6 +1,7 @@
 package com.fiap.restaurantes.bdd;
 
-import com.fiap.restaurantes.domain.entity.Usuario;
+
+import com.fiap.restaurantes.domain.entity.validation.Usuario;
 import com.fiap.restaurantes.domain.input.avaliacao.AtualizarAvaliacaoRequest;
 import com.fiap.restaurantes.domain.input.mesa.AtualizarMesaRequest;
 import com.fiap.restaurantes.domain.input.mesa.CadastrarMesaRequest;

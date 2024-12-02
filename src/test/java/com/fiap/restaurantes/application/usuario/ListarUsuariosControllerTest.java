@@ -6,7 +6,8 @@ import com.fiap.restaurantes.domain.entity.validation.Usuario;
 import com.fiap.restaurantes.domain.mapper.usuario.UsuarioMapper;
 import com.fiap.restaurantes.domain.output.usuario.UsuarioResponse;
 import com.fiap.restaurantes.domain.usecase.usuario.ListarUsuariosUseCase;
-import com.fiap.restaurantes.helper.UsuarioHelper;
+
+import com.fiap.restaurantes.utils.usuario.UsuarioHelper;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
