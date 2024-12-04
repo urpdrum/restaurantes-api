@@ -14,8 +14,8 @@ public class UsuarioHelper {
   }
 
   public static CadastrarUsuarioRequest gerarCadastrarUsuarioRequest() {
-    String nome = "Lucas";
-    String email = "lucas@mail.com";
+    String nome = "Renato";
+    String email = "Renato@mail.com";
     String telefone = "000000000";
     String senha = "aA@4b7c8";
     return new CadastrarUsuarioRequest(nome, email, senha, telefone);
@@ -23,53 +23,53 @@ public class UsuarioHelper {
 
   public static UsuarioResponse gerarUsuarioResponse() {
     Long id = 1L;
-    String nome = "Lucas";
-    String email = "lucas@mail.com";
+    String nome = "Renato";
+    String email = "Renato@mail.com";
     String telefone = "000000000";
-    String senha = "aA@4b7c8";
+    String senha = "aA@45jg8";
     return new UsuarioResponse(id, nome, email, senha, telefone);
   }
 
   public static UsuarioResponse gerarUsuarioResponseAtualizado() {
     Long id = 1L;
-    String nome = "João";
-    String email = "lucas@mail.com";
+    String nome = "Jorge";
+    String email = "Renato@mail.com";
     String telefone = "00000000001";
-    String senha = "bB@7aw85";
+    String senha = "Fd@7rt43";
     return new UsuarioResponse(id, nome, email, senha, telefone);
   }
 
   public static AtualizarUsuarioRequest gerarAtualizarUsuarioRequest() {
-    String nome = "João";
-    String email = "lucas@mail.com";
+    String nome = "Maria";
+    String email = "Renato@mail.com";
     String telefone = "00000000001";
-    String senha = "bB@7aw85";
+    String senha = "Ui@7rs85";
     return new AtualizarUsuarioRequest(nome, email, senha, telefone);
   }
 
 
   public static Usuario gerarUsuarioValidoComId() {
     Long id = 1L;
-    String nome = "Lucas";
-    String email = "lucas@mail.com";
+    String nome = "Renato";
+    String email = "Renato@mail.com";
     String telefone = "000000000";
-    String senha = "aA@4b7c8";
+    String senha = "ao@4j7c8";
     Usuario usuario = new Usuario(nome, email, senha, telefone);
     usuario.setUsuarioId(id);
     return usuario;
   }
 
   public static Usuario gerarUsuarioValido() {
-    String nome = "Lucas";
-    String email = "lucas@mail.com";
+    String nome = "Renato";
+    String email = "Renato@mail.com";
     String telefone = "000000000";
-    String senha = "aA@4b7c8";
+    String senha = "jK@4b7c8";
     return  new Usuario(nome, email, senha, telefone);
   }
 
   public static UsuarioEntity gerarUsuarioEntity() {
-    String nome = "Lucas";
-    String email = "lucas@mail.com";
+    String nome = "Renato";
+    String email = "Renato@mail.com";
     String telefone = "000000000";
     String senha = "aA@4b7c8";
     return  new UsuarioEntity(nome, email, senha, telefone);
@@ -77,31 +77,31 @@ public class UsuarioHelper {
 
   public static Usuario gerarUsuarioComNomeVazio() {
     String nome = "";
-    String email = "lucas@mail.com";
+    String email = "Renato@mail.com";
     String telefone = "000000000";
     String senha = "aA@4b7c";
     return  new Usuario(nome, email, senha, telefone);
   }
 
   public static Usuario gerarUsuarioComEmailInvalido() {
-    String nome = "Lucas";
-    String email = "lucas.com";
+    String nome = "Renato";
+    String email = "Renato.com";
     String telefone = "000000000";
     String senha = "aA@4b7c";
     return  new Usuario(nome, email, senha, telefone);
   }
 
   public static Usuario gerarUsuarioComSenhaInvalida() {
-    String nome = "Lucas";
-    String email = "lucas@mail.com";
+    String nome = "Renato";
+    String email = "Renato@mail.com";
     String telefone = "000000000";
     String senha = "123senhainvalida";
     return  new Usuario(nome, email, senha, telefone);
   }
 
   public static Usuario gerarUsuarioComTelefoneVazio() {
-    String nome = "Lucas";
-    String email = "lucas@mail.com";
+    String nome = "Renato";
+    String email = "Renato@mail.com";
     String telefone = "";
     String senha = "123senhainvalida";
     return  new Usuario(nome, email, senha, telefone);

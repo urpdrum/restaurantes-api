@@ -63,7 +63,7 @@ public class RestauranteHelper {
         return new CadastrarRestauranteRequest(
             nome,
                 gerarCadastrarEnderecoRequest(),
-            "MEXICANA",
+            "ARABE",
             capacidade,
             horarioFuncionamento);
     }
@@ -75,7 +75,7 @@ public class RestauranteHelper {
         return new CadastrarRestauranteRequest(
                 nome,
                 gerarCadastrarEnderecoRequest(),
-                "MEXICANA",
+                "ARABE",
                 capacidade,
                 horarioFuncionamento);
     }
@@ -87,7 +87,7 @@ public class RestauranteHelper {
         return new CadastrarRestauranteRequest(
                 nome,
                 gerarCadastrarEnderecoRequest(),
-                "MEXICANA",
+                "ARABE",
                 capacidade,
                 horarioFuncionamento);
     }
@@ -99,7 +99,7 @@ public class RestauranteHelper {
         return new CadastrarRestauranteRequest(
                 nome,
                 gerarCadastrarEnderecoRequestComCepInexistente(),
-                "MEXICANA",
+                "ARABE",
                 capacidade,
                 horarioFuncionamento);
     }
@@ -111,7 +111,7 @@ public class RestauranteHelper {
         return new AtualizarRestauranteRequest(
             nome,
                 gerarAtualizarEnderecoRequest(),
-            "MEXICANA",
+            "ARABE",
             capacidade,
             horarioFuncionamento);
     }
@@ -123,7 +123,7 @@ public class RestauranteHelper {
         return new AtualizarRestauranteRequest(
                 nome,
                 gerarAtualizarEnderecoRequest(),
-                "MEXICANA",
+                "ARABE",
                 capacidade,
                 horarioFuncionamento);
     }
@@ -135,7 +135,7 @@ public class RestauranteHelper {
         return new AtualizarRestauranteRequest(
                 nome,
                 gerarAtualizarEnderecoRequest(),
-                "MEXICANA",
+                "ARABE",
                 capacidade,
                 horarioFuncionamento);
     }
@@ -147,7 +147,7 @@ public class RestauranteHelper {
         return new AtualizarRestauranteRequest(
                 nome,
                 gerarAtualizarEnderecoRequestComCepInexistente(),
-                "MEXICANA",
+                "ARABE",
                 capacidade,
                 horarioFuncionamento);
     }
@@ -155,7 +155,7 @@ public class RestauranteHelper {
     public static RestauranteEntity gerarRestauranteEntityValido() {
         String nome = "Nome Teste";
         Integer capacidade = 100;
-        String tipoCozinhaEnum = "MEXICANA";
+        String tipoCozinhaEnum = "ARABE";
         String horarioFuncionamento = "10 as 11";
         return new RestauranteEntity(1L, nome,
             enderecoEntityBuilder(),
@@ -174,7 +174,7 @@ public class RestauranteHelper {
     public static RestauranteResponse gerarRestauranteResponse(){
         String nome = "Nome Teste";
         Integer capacidade = 100;
-        String tipoCozinhaEnum = "MEXICANA";
+        String tipoCozinhaEnum = "ARABE";
         String horarioFuncionamento = "10 as 11";
 
         return new RestauranteResponse(
