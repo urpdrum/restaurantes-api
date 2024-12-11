@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @SpringBootApplication
 @EnableFeignClients
 @OpenAPIDefinition(info = @Info(
-        title = "Restaurantes - Grupo 23",
+        title = "Restaurantes - Grupo 08",
         version = "1.0.0",
         description = "Sistema de gerenciamento de Restaurantes e Reservas desenvolvido para o Tech Challenge da terceira fase da Pós Tech da FIAP. O objetivo do sistema é permitir que os usuários se cadastrem, realizem agendamento de reservas e possam registrar comentários e avaliações sobre os restaurantes."
 ))
