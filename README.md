@@ -94,7 +94,7 @@ Nos testes, a gente usa TDD (Test-Driven Development) no desenvolvimento e JUnit
 <td align="center">
       <div>
                  <b> Renan   </b><br>
-            <a href="https://www.linkedin.com/in/lucas-franco-barbosa-navarro-a51937221/" alt="Linkedin"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" height="20"></a>
+            <a href=" " alt="Linkedin"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" height="20"></a>
                   </div>
     </td>
   <td align="center">
