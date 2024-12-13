@@ -7,14 +7,17 @@ import com.fiap.restaurantes.domain.output.restaurante.RestauranteResponse;
 import com.fiap.restaurantes.domain.usecase.restaurante.CadastrarRestauranteUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.net.URI;
 
-@RestController
-@RequestMapping(value = "/restaurantes", method = RequestMethod.POST)
+import static org.springframework.web.servlet.support.ServletUriComponentsBuilder.fromCurrentRequest;
 
+@RestController
+@RequestMapping(value = "/restaurantes")
 @RequiredArgsConstructor
 public class CadastrarRestauranteController {
 
@@ -28,7 +31,7 @@ public class CadastrarRestauranteController {
 
         RestauranteResponse restauranteResponse = restauranteMapper.toRestauranteResponse(cadastrarRestauranteUseCase.cadastrarRestaurante(restaurante));
 
-        URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
+        URI uri = fromCurrentRequest()
                 .path("/{id}")
                 .buildAndExpand(restauranteResponse.restauranteId())
                 .toUri();
