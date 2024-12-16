@@ -69,7 +69,7 @@ Você pode [acessar o código fonte do projeto](https://github.com/urpdrum/resta
 A aplicação foi arquitetada através dos princípios de Clean Archtecture e foi publicada para ser consumida como uma API Rest.
 
 O sistema foi implantado utilizando a plataforma gratuita https://render.com/ e para o banco de dados Postgres, você pode acessar o swagger da aplicação para ter acesso a todos os endpoints em:
-https://restaurantes-api-6wep.onrender.com/swagger-ui/index.html
+https://restaurantes-api-6wep.onrender.com/swagger-ui/index.html.
 
 ## Testes
 
