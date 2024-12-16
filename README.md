@@ -62,14 +62,14 @@ Um novo sistema de Restaurantes foi dessenvolvido neste projeto, contendo gerenc
 
 ## Acessos
 
-Você pode [acessar o código fonte do projeto](https://github.com/urpdrum/sabores-api).
+Você pode [acessar o código fonte do projeto](https://github.com/urpdrum/restaurantes-api).
 
 ## Sobre a aplicação
 
 A aplicação foi arquitetada através dos princípios de Clean Archtecture e foi publicada para ser consumida como uma API Rest.
 
-O sistema foi implantado utilizando a plataforma gratuita https://render.com/ em conjunto com o https://supabase.com/ para implantarmos o banco de dados Postgres, você pode acessar o swagger da aplicação para ter acesso a todos os endpoints em:
-https://sabores-api.onrender.com/sabores-doc.html
+O sistema foi implantado utilizando a plataforma gratuita https://render.com/ e para o banco de dados Postgres, você pode acessar o swagger da aplicação para ter acesso a todos os endpoints em:
+https://restaurantes-api-6wep.onrender.com/swagger-ui/index.html
 
 ## Testes
 
